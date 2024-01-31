@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+ <title>Scrap Collector</title>
+ <script src="OmegaNum.js"></script>
+ <script src="format.js"></script>
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" type="image/png" href="img/Normal.png">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="script.js" defer></script>
+</head>
+<body>
+ <div class="content">
+   <div class="menus">
+     <div class="main">      
+        <div class="main2">
+          <button class="helpmejesus" title="Click to pick up a scrap off the ground." onclick="collect()">Collect scraps</button>
+          <button class="helpmejesus" onclick="travelUpgrade()">Go to upgrade shop</button>
+        </div>
+        <div class="sellButtons">
+          <button class="sell" onclick="sellAll()">Click to sell your scraps.</button>
+        </div>
+        <div class="main3">
+          <button onclick="travelPerm()" class="travelperm">Go to permanent upgrade shop.</button>
+        </div>
+        <div class="main4">
+          <button onclick="travelMine()" class="travelmine" id="mine"></button>
+        </div>        
+        <p id="scrapValue" class="scrapValueDisplay">Scrap is currently worth 1$ per piece.</p>
+        <p id="scrapPerClick" class="scrapPerClickDisplay">You are currently getting 1 scrap(s) per click.</p>
+     </div>
+     <div class="upgradeplace">
+       <div class="upgrades">
+         <button class="upgradebuttons" id="autoCollector" onclick="buyAutoCollector()" title="This machine will automatically collect scrap for you." >Buy Auto-Collector ($25)</button>
+         <button class="upgradebuttons" id="advertising" onclick="buyAdvertising()" title="Advertising will increase the base price of your scraps.">Advertise ($200)</button>
+       </div>
+       <div class="upgrades2">
+         <button class="upgradebuttons" id="sisterCompany" onclick="buyCompany()" title="Buying a sister company will multiply your money gain by 35.">Buy a Sister Company ($1.000e7)</button>
+       
+         <button class="upgradebuttons" id="professionalAdvertiser" onclick="buyPAdvertiser()" title="This professional advertiser will raise your scrap value to +^1.1 additively!">Buy a Professional Advertiser ($1.000e45)</button>
+         <div>
+         <button class="travelu"onclick="goback()">Return</button>
+         </div>
+      </div>
+      <p id="scrapValue2" class="scrapValueDisplay">Scrap is currently worth 1$ per piece.</p>
+      <p id="scrapPerClick2" class="scrapPerClickDisplay">You are currently getting 1 scrap(s) per click.</p>
+     </div>
+     <div class="permupgradeplace"> 
+        <button id="ScrapUpgrade1" class="ScrapUpgrade1" title="Scrap gain and value is multiplied by your total amount of temporary upgrades. ($100,000)" onclick="buyScrapUpgrade(0)" ></button>
+        <button id="ScrapUpgrade2" class="ScrapUpgrade2" title="Scrap gain boosts itself logistically. ($1e30)" onclick="buyScrapUpgrade(1)" ></button>
+        <button id="ScrapUpgrade3" class="ScrapUpgrade3" title="Scrap gain is raised to ^1.2. ($1e475)" onclick="buyScrapUpgrade(2)" ></button>
+        <button id="AutoBuyer1" class="autobuyer" title="Automates buying Auto-Collector and Advertising. ($1e50)" onclick="buyAutoBuyer()"></button>
+        <button id="AutoBuyer2" class="autobuyer2" title="Automates buying Sister Companies and Professional Advertisers. ($1e200)" onclick="buyAutoBuyer2()"></button>
+        <button id="UpgradeUpgrade1" class="UpgradeUpgrade1" title="Increases the effect of Professional Advertiser to ^1.15, and increases the maximum bought from 10 to 15. ($1e680)" onclick="buyUpgradeUpgrade1()"></button>
+        <button class="travelpu" title="Go back"onclick="goback()">Return</button>
+     </div>
+     <div class="mine">
+       <button id="miner" class="minebuttons" onclick="buyMiner()">Buy a Miner ($1e3600)</button>
+       <button class="minebuttons" onclick="breakOre()">Break apart your ores.</button>
+       <button class="travelm" onclick="goback()">Return</button>
+      <div id="ores"class="ores">
+        <p id="ore" class="ore">You have 0 chunks of ore.</p>
+        <p id="iron" class="iron">You have 0 pieces of iron.</p>
+        <p id="gold" class="gold">You have 0 pieces of gold.</p>
+        <p id="diamond" class="diamond">You have 0 diamonds.</p>
+        <button id="pickaxe" class="pickaxe" title="Increases the value of iron, gold & diamonds. Raises ore gain to ^2. ($1e3820)" onclick="pickaxe()"></button>
+      </div>
+     </div>
+    </div> 
+    <div class="inventory">
+      <div class="devButtons">
+        <button onclick="resetSave()" class="resetButton">Reset Save</button>
+      </div>
+      <p id="money">Money: $0</p>
+      <p id="autoScrapPlus">You are gaining 0 pieces of scraps per second.</p>
+      <p id="scraps">You have 0 pieces of scraps.</p>
+    </div>
+    </div>
+    <div class="version">
+      <p>You are playing on v2.1, the 2024 version.</p>
+    </div>
+   </div> 
+</body>
+   

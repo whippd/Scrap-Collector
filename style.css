@@ -1,0 +1,205 @@
+.inventory{
+  font-size: 24px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 85px;
+  width: 100%;
+}
+
+.version{
+  font-size: 30px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.main{
+  font-size: 40px;
+}
+
+.upgradeplace{
+  display: none;
+}   
+
+.permupgradeplace{
+  display: none;
+  grid-template-columns: repeat(3, 100px);
+}
+
+.mine{
+  display: none;
+  grid-template-columns: repeat(2, 200px);
+}
+
+.minebuttons{
+  font-size: 30px;
+}
+
+.ScrapUpgrade1{
+  height: 68px;
+  width: 68px;
+  background: url(https://cdn.discordapp.com/attachments/903119532959367239/910347169305870356/Recycle.png);
+}
+
+.ScrapUpgrade2{
+  height: 68px;
+  width: 68px;
+  background: url(https://cdn.discordapp.com/attachments/903119532959367239/910347169305870356/Recycle.png);
+}
+
+.ScrapUpgrade3{
+  height: 68px;
+  width: 68px;
+  background: url(https://cdn.discordapp.com/attachments/903119532959367239/910347169305870356/Recycle.png);
+}
+
+.autobuyer{
+  height: 68px;
+  width: 68px;  
+  background: url(https://cdn.discordapp.com/attachments/903119532959367239/910303619893567488/gear.png);
+}
+.autobuyer2{
+  height: 68px;
+  width: 68px;
+  background: url(https://cdn.discordapp.com/attachments/903119532959367239/910303619893567488/gear.png);
+}
+.UpgradeUpgrade1{
+  height: 68px;
+  width: 68px;
+  background: url(https://cdn.discordapp.com/attachments/903119532959367239/910712160798261269/hammer.png); 
+}
+
+.balls{
+ /* display: none;*/
+}
+
+.sellButtons{
+  display: grid;
+  grid-template-columns: repeat(1, 630px);
+  margin-bottom: 0px;
+}
+.sell{
+  font-size: 50px;
+}
+
+.main2{
+  display: grid;
+  grid-template-columns: repeat(2, 315px);
+  height: 50px;
+}
+.helpmejesus{
+  font-size: 32px;
+}
+
+.main3{
+  display: grid;
+  grid-template-columns: repeat(1, 630px);
+  margin-bottom: 20px;  
+}
+
+.main4{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.travelperm{
+  font-size: 30px;
+}
+
+.travelmine{
+  width: 128px;
+  height: 128px;
+  background: url(https://cdn.discordapp.com/attachments/903119532959367239/910712184567394314/minelocked.png);
+  border: 0px;
+}
+
+.climb{
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+  font-size: 26px;
+}
+
+.travelButtons{
+  width: 100px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 150px)
+}
+
+.scrapValueDisplay{
+  font-size: 24px
+}
+
+.scrapPerClickDisplay{
+  font-size: 24px
+}
+
+.ores{
+  display: none;
+  position: absolute;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.pickaxe{
+  position: fixed;
+  top: 0;
+  margin-top: 84px;
+  height: 68px;
+  width: 68px;
+  background: url(https://cdn.discordapp.com/attachments/903119532959367239/910712150400598016/pickaxe.png);
+  background-color: black;
+}
+
+.travelu{
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+  font-size: 26px;
+}
+
+.travelpu{
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+  font-size: 26px;
+}
+
+.travelm{
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+  font-size: 26px;
+}
+
+.upgrades{
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+}
+
+.upgrades2{
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  margin-bottom: 10px;
+}
+
+.upgradebuttons{
+  font-size: 20px;
+}
+
+.resetButton{
+  margin-bottom: 10px;
+}
+
+body{
+  background: #0f1112;
+}
+
+button{
+  background-color: black;
+  color: white;
+
+}
+p {
+  color: white
+}
